@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1b4117f-5430-4152-a6a0-8e0f4e15980b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/AboutUs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/CreditCradPayments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/MainStations.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/PaymentMethods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/bookingForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/elephant.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/finalLogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/temple.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/train.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/FinalPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/CreditCradPayments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/CreditCradPayments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/MainStations.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/MainStations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/PaymentMethods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/PaymentMethods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/bookingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/bookingForm.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,24 +26,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/bookingForm.js">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="62" column="22" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="782">
+              <caret line="60" column="46" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="46" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/PaymentMethods.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,10 +40,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="139">
+              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#componentDidMount#0;n#MobilePhone#0" />
               </folding>
             </state>
           </provider>
@@ -66,21 +53,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interfaces/CreditCradPayments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+            <state relative-caret-position="763">
+              <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#180#4319#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/bookingForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="65" column="41" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="65" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interfaces/MainStations.json">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/FinalPayment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="1995" column="20" selection-start-line="1995" selection-start-column="20" selection-end-line="1995" selection-end-column="20" />
+            <state relative-caret-position="520">
+              <caret line="163" column="64" lean-forward="true" selection-start-line="163" selection-start-column="64" selection-end-line="163" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#3808#5940#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,25 +90,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+        <entry file="file://$PROJECT_DIR$/src/Interfaces/PaymentMethods.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
+            <state relative-caret-position="540">
+              <caret line="66" column="99" lean-forward="true" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="99" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,22 +125,27 @@
       <list>
         <option value="$PROJECT_DIR$/src/Interfaces/Home.js" />
         <option value="$PROJECT_DIR$/src/Interfaces/AboutUs.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MainStations.json" />
-        <option value="$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js" />
-        <option value="$PROJECT_DIR$/src/Interfaces/bookingForm.js" />
         <option value="$PROJECT_DIR$/src/Interfaces/creditCardComponent.js" />
-        <option value="$PROJECT_DIR$/src/Interfaces/PaymentMethods.js" />
+        <option value="$USER_HOME$/OneDrive/Documents/MongoDBs/Stations.js" />
+        <option value="$PROJECT_DIR$/src/Interfaces/DisplyPaymentDetails.js" />
+        <option value="$PROJECT_DIR$/src/Interfaces/Members.js" />
+        <option value="$PROJECT_DIR$/src/Interfaces/MainStations.json" />
+        <option value="$PROJECT_DIR$/src/Interfaces/finalPayment.js" />
+        <option value="$PROJECT_DIR$/src/Interfaces/bookingForm.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Interfaces/CreditCradPayments.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/Interfaces/PaymentMethods.js" />
+        <option value="$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js" />
+        <option value="$PROJECT_DIR$/src/Interfaces/FinalPayment.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="405" />
-    <option name="y" value="70" />
-    <option name="width" value="1515" />
-    <option name="height" value="935" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="260" />
+    <option name="y" value="12" />
+    <option name="width" value="1629" />
+    <option name="height" value="1039" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -142,17 +156,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="newproject01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newproject01" type="462c0819:PsiDirectoryNode" />
+              <item name="NewProjectFor_DS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewProjectFor_DS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="newproject01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newproject01" type="462c0819:PsiDirectoryNode" />
+              <item name="NewProjectFor_DS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewProjectFor_DS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="newproject01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newproject01" type="462c0819:PsiDirectoryNode" />
+              <item name="NewProjectFor_DS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewProjectFor_DS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -165,13 +179,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="H:/lab6/book_service" />
+    <property name="last_opened_file_path" value="H:/ds-assignment" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="D:\SLIIT\3rd year\1st Semester\DS\Assignmet 2\newproject\newproject01\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.eslint" value="D:\SLIIT\3rd year\1st Semester\DS\Assignments\Assignmet 2\newproject\NewProjectFor_DS\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="D:\SLIIT\3rd year\1st Semester\DS\Assignments\Assignmet 2\newproject\NewProjectFor_DS\node_modules\eslint" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -228,11 +242,17 @@
       <workItem from="1557762373179" duration="2178000" />
       <workItem from="1557805059192" duration="1930000" />
       <workItem from="1557904030560" duration="229000" />
+      <workItem from="1558028338611" duration="3510000" />
+      <workItem from="1558061516607" duration="5845000" />
+      <workItem from="1558084600005" duration="4007000" />
+      <workItem from="1558107784475" duration="2567000" />
+      <workItem from="1558162416136" duration="25065000" />
+      <workItem from="1558244759880" duration="3935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34427000" />
+    <option name="totallyTimeSpent" value="79356000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -244,10 +264,30 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="208" y="10" width="1303" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15333775" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07266983" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32904148" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.12464589" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.13314448" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13693467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -261,27 +301,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21104816" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.038995374" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.16005665" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.13447782" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -291,16 +311,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/finalLogo.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -322,30 +332,62 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/creditCardComponent.js" />
+    <entry file="file://$USER_HOME$/OneDrive/Documents/MongoDBs/Stations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="2000" column="7" lean-forward="true" selection-start-line="2000" selection-start-column="7" selection-end-line="2000" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Microsoft/Windows/INetCache/IE/Z8IFQ8ZY/myresource[1].json" />
+    <entry file="file://$USER_HOME$/AppData/Local/Microsoft/Windows/INetCache/IE/HJMMRC00/myresource[1].json" />
+    <entry file="file://$USER_HOME$/AppData/Local/Microsoft/Windows/INetCache/IE/HJMMRC00/myresource[2].json" />
+    <entry file="file://$USER_HOME$/AppData/Local/Microsoft/Windows/INetCache/IE/HJMMRC00/myresource[3].json" />
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/temple.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainStations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Microsoft/Windows/INetCache/IE/C7NI73KW/myresource[1].json" />
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-131" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/Members.js" />
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/DisplyPaymentDetails.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="60" column="46" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/bookingForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/PaymentMethods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="1088">
+          <caret line="65" column="41" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="65" selection-end-column="41" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -354,36 +396,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/MobilePhonePayments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
+        <state relative-caret-position="139">
+          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#componentDidMount#0;n#MobilePhone#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interfaces/CreditCradPayments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+        <state relative-caret-position="763">
+          <caret line="58" column="51" selection-start-line="58" selection-start-column="51" selection-end-line="58" selection-end-column="51" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#180#4319#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfaces/MainStations.json">
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/PaymentMethods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="1995" column="20" selection-start-line="1995" selection-start-column="20" selection-end-line="1995" selection-end-column="20" />
+        <state relative-caret-position="540">
+          <caret line="66" column="99" lean-forward="true" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interfaces/FinalPayment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="163" column="64" lean-forward="true" selection-start-line="163" selection-start-column="64" selection-end-line="163" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#3808#5940#0" />
+          </folding>
         </state>
       </provider>
     </entry>

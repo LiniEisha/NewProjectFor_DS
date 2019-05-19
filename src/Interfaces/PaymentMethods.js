@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import ReactDOM from "react-dom";
-/*import Booking from "./Interfaces/bookingForm";*/
-import {USERNAME, NOOFTICKET, GOTO, GOFROM} from "./bookingForm";
-import mainStations from "./MainStations";
-import CreditCard from "./CreditCradPayments";
+import axios from 'axios';
+
+import { NOOFTICKET, GOTO, GOFROM} from "./bookingForm";
 
 class PaymentMethods extends Component {
     constructor(props) {
@@ -15,41 +13,22 @@ class PaymentMethods extends Component {
             selectMobilePhone: "",
             isMobilePhone: false,
             selectedOption: "",
+            to : sessionStorage.getItem(GOTO),
+            from : sessionStorage.getItem(GOFROM),
+            ticket : sessionStorage.getItem(NOOFTICKET),
+            totPrice: 0
         }
 
-      /*  this.OnSelectType = this.OnSelectType.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);*/
-    }
-/*
-    OnSelectType = (event) => {
-        this.setState({selectType: event.target.value});
     }
 
-    handleSubmit(event){
-        event.preventDefault();
 
-        alert("You chose the ${this.state.selectType}");
-    }
-*/
-     OnSelectCreditCard = (event) => {
-        // this.setState({selectCreditCard: event.target.value});
+    OnSelectCreditCard = (event) => {
          this.setState({isCreditCard: true});
      }
 
     OnSelectMobliePhone = (event) => {
-        // this.setState({selectMobilePhone: event.target.value});
         this.setState({isMobilePhone: true});
     }
-/*
-   OnSelectPaymentType = (event) => {
-           if (e.target.checked && event.target.value === "no") { // if value of "No" option is selected
-               this.props.history.push("newRoute"); // navigate to another route
-               //window.location.href = "https://www.google.com"; - if you want to navigate to another page
-           }
-           this.setState({ selectedOption: event.target.value });
-       }*/
-
-
 
     submitSelectedType = (event) =>{
         event.preventDefault();
@@ -59,42 +38,37 @@ class PaymentMethods extends Component {
             this.props.history.push("/mobilePhone")
         else
             alert("please select a payment method")
-        /*if(this.state.isCreditCard === true){
-            //go to component credit card
-            console.log(this.state.selectCreditCard)
-        }
+    }
 
-        if(this.state.isMobilePhone === true){
-            //go to component mobile phone payment
-            console.log(this.state.selectMobilePhone)
-        }*/
+    componentDidMount() {
+        const postData = {
+            "to": this.state.to,
+            "from" : this.state.from,
+            "noOfTickets" : Number(this.state.ticket)
+        };
 
+        let axiosConfig = {
+            headers: {
+                'Content-Type': 'application/json;charset=UTF-8',
+            }
+        };
+        axios.post('http://localhost:8080/DSEasyBooking/webapi/myresourceTrain/getprice', postData,axiosConfig)
+            .then(response=> {
+                this.setState({totPrice: response.data.totPrice});
+            })
     }
 
     render(){
         return (
-
-
             <div>
-                {/* <h1>Booking Details</h1>
-                <p> Details: {this.props.userName} </p>
-                DisplayDetails(nextProps){
-                    nextProps.isUserName;
-            }*/}
-
-                {/* <h3>Name : {sessionStorage.getItem(USERNAME)}</h3>
-                <h3>No of tickets : {sessionStorage.getItem(NOOFTICKET)}</h3>
-                <h3>From : {sessionStorage.getItem(GOFROM)}</h3>
-                <h3>To : {sessionStorage.getItem(GOTO)}</h3>*/}
-
                 <div className="container-fluid" align="center">
                     <div className="card text-white bg-warning mb-3" style={{width: "500px", align: "center"}}>
                         <div className="card-header" align="center">Booking Details</div>
+                        <h5 className="card-title"> Payment : RS. {this.state.totPrice.toFixed()} /= </h5>
                         <div className="card-text">
                             <div className="row justify-content-md-center">
                                 <div className="col-md-auto">
                                     <ul className="bullets">
-                                        <li>Name : {sessionStorage.getItem(USERNAME)}</li>
                                         <li>No of tickets : {sessionStorage.getItem(NOOFTICKET)}</li>
                                         <li>From : {sessionStorage.getItem(GOFROM)}</li>
                                         <li>To : {sessionStorage.getItem(GOTO)}</li>
@@ -104,7 +78,7 @@ class PaymentMethods extends Component {
                         </div>
                     </div>
                 </div>
-
+                <h5 className="text-info"> </h5>
 
                 <hr/>
                 <hr/>
@@ -116,14 +90,16 @@ class PaymentMethods extends Component {
 
                         <div className="card text-white bg-success mb-3" style={{width: "500px", align: "center"}}>
                             <div className="card-header" align="center">Select Payment Type</div>
+
                             <div className="card-text">
-                                        <form className="was-validated" onSubmit={this.handleSubmit}>
+                                        <form className="was-validated">
                                             <input type="radio" name="paymentType" value="creditCard" onChange={this.OnSelectCreditCard.bind()}/> Credit Card  <br/>
                                             <input type="radio" name="paymentType" value="mobliephone" onChange={this.OnSelectMobliePhone.bind()}/> Mobile Phone
 
                                             <div className="form-group">
                                                 <button type="button" className="btn btn-success btn-md" onClick={this.submitSelectedType.bind()}>Confirm</button>
                                             </div>
+                                            {this.state.paymentOption}
                                         </form>
                             </div>
                         </div>

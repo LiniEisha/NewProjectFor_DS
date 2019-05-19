@@ -12,6 +12,7 @@ import PaymentMethods from "./Interfaces/PaymentMethods";
 import AboutUs from "./Interfaces/AboutUs";
 import CreditCard from "./Interfaces/CreditCradPayments";
 import MobilePhone from "./Interfaces/MobilePhonePayments";
+import FinalPayment from "./Interfaces/FinalPayment";
 
 
 function App() {
@@ -57,10 +58,9 @@ function App() {
                     <Route path="/aboutUs" component={AboutUs}/>
                     <Route path="/creditCard" component={CreditCard}/>
                     <Route path="/mobilePhone" component={MobilePhone}/>
+                    <Route path="/finalPayment" component={FinalPayment}/>
                 </Switch>
-
             </Router>
-
         </div>
     );
 }
